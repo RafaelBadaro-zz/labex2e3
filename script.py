@@ -2,7 +2,7 @@ import requests
 import time
 import csv
 
-headers = {"Authorization": "token 6207e9b60742649092a01fc229a44ee4746a3672"}
+headers = {"Authorization": "token xxxx"}
 
 
 def run_query(query):
