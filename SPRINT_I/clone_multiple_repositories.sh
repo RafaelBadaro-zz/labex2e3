@@ -1,6 +1,6 @@
 #!/bin/sh
 
-readarray array -t a < /home/lucas.rotsen/Git_Repos/labex2/SPRINT_II/repository-list.txt
+readarray array -t a < /home/lucas.rotsen/Git_Repos/labex2/SPRINT_I/repository-list.txt
 
 mkdir -p ~/Git_Repos/labex2/repositories && cd ~/Git_Repos/labex2/repositories
 
@@ -14,7 +14,7 @@ do
   echo ""
 
   FOLDER=`ls`
-  radon raw $FOLDER -jO /home/lucas.rotsen/Git_Repos/labex2/SPRINT_II/metrics/${FOLDER}.json
+  radon raw $FOLDER -jO /home/lucas.rotsen/Git_Repos/labex2/SPRINT_I/metrics/${FOLDER}.json
 
   echo "Removing all repos ..."
   rm -rf *
