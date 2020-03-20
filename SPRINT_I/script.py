@@ -29,32 +29,32 @@ def mine(first, interval):
     # GraphQL query
 
     query = """
-          {
-            user(login: "gvanrossum") {
-              repositories(first: 23) {
-                nodes {
-                  nameWithOwner
-                  url
-                  stargazers {
-                    totalCount
-                  }
-                  watchers {
-                    totalCount
-                  }
-                  forks {
-                    totalCount
-                  }
-                  releases {
-                    totalCount
-                  }
-                  createdAt
-                  primaryLanguage {
-                    name
-                  }
+         {
+          user(login: "gvanrossum") {
+            repositories(first: 50, isFork: false) {
+              nodes {
+                nameWithOwner
+                url
+                stargazers {
+                  totalCount
+                }
+                watchers {
+                  totalCount
+                }
+                forks {
+                  totalCount
+                }
+                releases {
+                  totalCount
+                }
+                createdAt
+                primaryLanguage {
+                  name
                 }
               }
             }
           }
+        }
           """
 
     # O resultado da query que contem a proxima pagina e os nodes
@@ -62,7 +62,9 @@ def mine(first, interval):
     querySize = len(queryResult['data']['user']['repositories']['nodes'])
     for y in range(querySize):
         # Salva os nodes no array de nodes
-        nodes.append(queryResult['data']['user']['repositories']['nodes'][y])
+
+        if queryResult['data']['user']['repositories']['nodes'][y]['primaryLanguage'] != None and queryResult['data']['user']['repositories']['nodes'][y]['primaryLanguage']['name'] == 'Python':
+            nodes.append(queryResult['data']['user']['repositories']['nodes'][y])
         # Pega o endCursor aka proxima pagina
         # endCursor = '"{}"'.format(
         #     queryResult["data"]["search"]["pageInfo"]["endCursor"])
@@ -73,7 +75,7 @@ def mine(first, interval):
 
 
 def writeCsv(nodes):
-    with open("/Users/Rafael/Desktop/labex2/repos.csv", 'w') as new_file:
+    with open("/Users/Rafael/Desktop/labex2/SPRINT_I/repos.csv", 'w') as new_file:
 
         fnames = [
             'name_with_owner',
