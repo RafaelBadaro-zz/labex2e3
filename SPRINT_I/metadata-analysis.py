@@ -1,4 +1,5 @@
 import json
+import datetime
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
@@ -20,10 +21,15 @@ def process_metrics():
     _df = pd.read_csv(METADATA_FPATH, sep=',')
     _df_len = _df.shape[0]
     _df['loc'] = [0] * _df_len
+    _df['release_frequency'] = [0] * _df_len
+
+    today = datetime.datetime.today()
 
     for i in range(0, _df_len):
         corresponding_loc = [v[1] for v in consolidated_locs if v[0] == _df.loc[i, 'name_with_owner'].split('/')[1]][0]
         _df.at[i, 'loc'] = corresponding_loc
+        _df.at[i, 'release_frequency'] = _df.loc[i, 'releases'] - (today - datetime.datetime.strptime(
+            _df.loc[i, 'created_at'].split('T')[0], '%Y-%m-%d')).days
 
 
 def generate_consolidated_loc(metric_fpath):
@@ -40,10 +46,10 @@ def generate_consolidated_loc(metric_fpath):
 
 def calculate_medians():
     medians = {
-        'stars': [_df['forks'].median()],
-        'watchers': [_df['stars'].median()],
-        'forks': [_df['releases'].median()],
-        'releases': [_df['watchers'].median()]
+        'stars': [_df['stars'].median()],
+        'watchers': [_df['watchers'].median()],
+        'forks': [_df['forks'].median()],
+        'releases': [_df['releases'].median()]
     }
 
     medians_df = pd.DataFrame(medians)
