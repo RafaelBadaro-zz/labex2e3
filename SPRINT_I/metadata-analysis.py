@@ -7,7 +7,7 @@ _df = None
 
 PROJECT_FOLDER = Path('/home/lucas.rotsen/Git_Repos/labex2')
 METRICS_FOLDER = PROJECT_FOLDER.joinpath('SPRINT_I', 'metrics')
-METADATA_FPATH = next(PROJECT_FOLDER.joinpath('SPRINT_I').glob('*.csv'))
+METADATA_FPATH = next(PROJECT_FOLDER.joinpath('SPRINT_I', "csv_files").glob('repos*'))
 
 
 def process_metrics():
@@ -39,7 +39,6 @@ def generate_consolidated_loc(metric_fpath):
 
 
 def calculate_medians():
-
     medians = {
         'stars': [_df['forks'].median()],
         'watchers': [_df['stars'].median()],
