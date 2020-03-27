@@ -22,6 +22,7 @@ def run_query(query):
 
 
 def mine(first, interval):
+    print('Comecando a mineracao...')
     endCursor = "null"  # Proxima pagina
     nodes = []  # Resultados da query
 
@@ -69,15 +70,22 @@ def mine(first, interval):
             if queryResultData[y]['primaryLanguage'] != None and queryResultData[y]['primaryLanguage']['name'] == 'Python':
                 nodes.append(queryResultData[y])
             # Pega o endCursor aka proxima pagina
-            endCursor = '"{}"'.format(queryResult["data"]["search"]["pageInfo"]["endCursor"])
+            endCursor = '"{}"'.format(
+                queryResult["data"]["search"]["pageInfo"]["endCursor"])
 
+        if x == interval/2:
+            print('Metade minerada, aguente firme!')
+        else:
+            print(str(x) + ': 100 minerados!!!')
     return nodes
 
 # Escreve em um arquivo csv
 
 
 def writeCsv(nodes):
-    with open("/Users/Rafael/Desktop/labex2/SPRINT_I/csv_files/mil_repos.csv", 'w') as new_file:
+    print('Comecando a escrever o arquivo csv!')
+
+    with open("/Users/Rafael/Desktop/labex2/SPRINT_II/csv_files/mil_repos.csv", 'w') as new_file:
 
         fnames = [
             'name_with_owner',
@@ -108,5 +116,5 @@ def writeCsv(nodes):
         print('Arquivo csv gerado com sucesso!')
 
 
-nodes = mine(100, 2)
+nodes = mine(100, 1)
 writeCsv(nodes)
