@@ -116,5 +116,5 @@ def writeCsv(nodes):
         print('Arquivo csv gerado com sucesso!')
 
 
-nodes = mine(100, 1)
+nodes = mine(100, 10)
 writeCsv(nodes)
