@@ -1,9 +1,16 @@
 #!/bin/sh
 
-readarray array -t a < /home/lucas.rotsen/Git_Repos/labex2/SPRINT_II/repository-list.txt
+getArray() {
+    array=()
+    while IFS= read -r line
+    do
+        array+=("$line")
+    done < "$1"
+}
 
 mkdir -p ~/Git_Repos/labex2/repositories && cd ~/Git_Repos/labex2/repositories
 
+getArray "/home/lucas.rotsen/Git_Repos/labex2/SPRINT_II/repository-list.txt"
 for element in "${array[@]}"
 do
   echo "Clonando $element ..."
