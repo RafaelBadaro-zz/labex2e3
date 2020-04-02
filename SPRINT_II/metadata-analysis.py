@@ -14,9 +14,7 @@ METADATA_FPATH = next(PROJECT_FOLDER.joinpath('SPRINT_II', "csv_files").glob('mi
 def process_metrics():
     global _df
 
-    consolidated_locs = list(
-        map(generate_consolidated_loc, tqdm(METRICS_FOLDER.glob('*.json'), "Calculating consolidated loc",
-                                            len(list(METRICS_FOLDER.glob('*.json'))))))
+    consolidated_locs = [generate_consolidated_loc(m) for m in tqdm(list(METRICS_FOLDER.glob('*.json')))]
 
     _df = pd.read_csv(METADATA_FPATH, sep=',')
     _df_len = _df.shape[0]
@@ -26,20 +24,30 @@ def process_metrics():
     today = datetime.datetime.today()
 
     for i in range(0, _df_len):
-        corresponding_loc = [v[1] for v in consolidated_locs if v[0] == _df.loc[i, 'name_with_owner'].split('/')[1]][0]
+        try:
+            corresponding_loc = [v[1] for v in consolidated_locs if v is not None and
+                                 v[0] == _df.loc[i, 'name_with_owner'].split('/')[1]][0]
+        except IndexError:
+            continue
+
         _df.at[i, 'loc'] = corresponding_loc
         _df.at[i, 'release_frequency'] = _df.loc[i, 'releases'] - (today - datetime.datetime.strptime(
             _df.loc[i, 'created_at'].split('T')[0], '%Y-%m-%d')).days
 
 
 def generate_consolidated_loc(metric_fpath):
-    with open(metric_fpath) as file:
-        metric = json.load(file)
+    try:
 
-    repo_name = next(iter(metric)).split('/')[0]
-    m_values = metric.values()
+        with open(metric_fpath) as file:
+            metric = json.load(file)
 
-    consolidated_loc = sum([item.get('loc', 0) for item in m_values])
+        repo_name = next(iter(metric)).split('/')[0]
+        m_values = metric.values()
+
+        consolidated_loc = sum([item.get('loc', 0) for item in m_values])
+
+    except Exception:
+        return
 
     return repo_name, consolidated_loc
 
