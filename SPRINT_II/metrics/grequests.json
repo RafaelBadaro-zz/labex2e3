@@ -1,0 +1,1 @@
+{"grequests/setup.py": {"loc": 64, "lloc": 3, "sloc": 32, "comments": 1, "multi": 20, "blank": 11, "single_comments": 1}, "grequests/grequests.py": {"loc": 155, "lloc": 79, "sloc": 76, "comments": 9, "multi": 35, "blank": 35, "single_comments": 9}, "grequests/tests.py": {"loc": 224, "lloc": 165, "sloc": 158, "comments": 7, "multi": 18, "blank": 40, "single_comments": 8}}
