@@ -1,2 +1,740 @@
-{"seq2seq/setup.py": {"loc": 32, "lloc": 4, "sloc": 13, "comments": 13, "multi": 3, "blank": 3, "single_comments": 13}, "seq2seq/bin/infer.py": {"loc": 129, "lloc": 63, "sloc": 80, "comments": 20, "multi": 4, "blank": 25, "single_comments": 20}, "seq2seq/bin/train.py": {"loc": 277, "lloc": 114, "sloc": 200, "comments": 26, "multi": 7, "blank": 42, "single_comments": 28}, "seq2seq/bin/__init__.py": {"loc": 0, "lloc": 0, "sloc": 0, "comments": 0, "multi": 0, "blank": 0, "single_comments": 0}, "seq2seq/bin/tools/generate_toy_data.py": {"loc": 147, "lloc": 62, "sloc": 71, "comments": 17, "multi": 32, "blank": 26, "single_comments": 18}, "seq2seq/bin/tools/profile.py": {"loc": 205, "lloc": 130, "sloc": 131, "comments": 25, "multi": 18, "blank": 33, "single_comments": 23}, "seq2seq/bin/tools/generate_beam_viz.py": {"loc": 132, "lloc": 64, "sloc": 90, "comments": 17, "multi": 2, "blank": 22, "single_comments": 18}, "seq2seq/bin/tools/generate_vocab.py": {"loc": 94, "lloc": 35, "sloc": 61, "comments": 19, "multi": 3, "blank": 11, "single_comments": 19}, "seq2seq/bin/data/cnn_daily_mail_summarization/process_story.py": {"loc": 58, "lloc": 24, "sloc": 20, "comments": 19, "multi": 6, "blank": 12, "single_comments": 20}, "seq2seq/seq2seq/graph_module.py": {"loc": 62, "lloc": 21, "sloc": 16, "comments": 16, "multi": 20, "blank": 10, "single_comments": 16}, "seq2seq/seq2seq/global_vars.py": {"loc": 18, "lloc": 2, "sloc": 1, "comments": 13, "multi": 3, "blank": 1, "single_comments": 13}, "seq2seq/seq2seq/losses.py": {"loc": 46, "lloc": 12, "sloc": 12, "comments": 14, "multi": 12, "blank": 8, "single_comments": 14}, "seq2seq/seq2seq/__init__.py": {"loc": 35, "lloc": 17, "sloc": 16, "comments": 13, "multi": 3, "blank": 3, "single_comments": 13}, "seq2seq/seq2seq/configurable.py": {"loc": 157, "lloc": 96, "sloc": 83, "comments": 20, "multi": 30, "blank": 24, "single_comments": 20}, "seq2seq/seq2seq/graph_utils.py": {"loc": 72, "lloc": 29, "sloc": 23, "comments": 13, "multi": 18, "blank": 16, "single_comments": 15}, "seq2seq/seq2seq/inference/__init__.py": {"loc": 22, "lloc": 6, "sloc": 5, "comments": 13, "multi": 2, "blank": 2, "single_comments": 13}, "seq2seq/seq2seq/inference/inference.py": {"loc": 54, "lloc": 15, "sloc": 16, "comments": 16, "multi": 12, "blank": 10, "single_comments": 16}, "seq2seq/seq2seq/inference/beam_search.py": {"loc": 279, "lloc": 100, "sloc": 121, "comments": 33, "multi": 73, "blank": 52, "single_comments": 33}, "seq2seq/seq2seq/decoders/attention_decoder.py": {"loc": 189, "lloc": 57, "sloc": 109, "comments": 21, "multi": 30, "blank": 28, "single_comments": 22}, "seq2seq/seq2seq/decoders/__init__.py": {"loc": 20, "lloc": 5, "sloc": 4, "comments": 13, "multi": 2, "blank": 1, "single_comments": 13}, "seq2seq/seq2seq/decoders/attention.py": {"loc": 150, "lloc": 56, "sloc": 64, "comments": 20, "multi": 34, "blank": 30, "single_comments": 22}, "seq2seq/seq2seq/decoders/basic_decoder.py": {"loc": 65, "lloc": 31, "sloc": 36, "comments": 13, "multi": 5, "blank": 10, "single_comments": 14}, "seq2seq/seq2seq/decoders/rnn_decoder.py": {"loc": 121, "lloc": 59, "sloc": 64, "comments": 16, "multi": 21, "blank": 21, "single_comments": 15}, "seq2seq/seq2seq/decoders/beam_search_decoder.py": {"loc": 183, "lloc": 62, "sloc": 95, "comments": 24, "multi": 33, "blank": 33, "single_comments": 22}, "seq2seq/seq2seq/contrib/rnn_cell.py": {"loc": 124, "lloc": 55, "sloc": 66, "comments": 23, "multi": 20, "blank": 16, "single_comments": 22}, "seq2seq/seq2seq/contrib/__init__.py": {"loc": 13, "lloc": 0, "sloc": 0, "comments": 13, "multi": 0, "blank": 0, "single_comments": 13}, "seq2seq/seq2seq/contrib/experiment.py": {"loc": 114, "lloc": 32, "sloc": 42, "comments": 17, "multi": 33, "blank": 21, "single_comments": 18}, "seq2seq/seq2seq/contrib/seq2seq/decoder.py": {"loc": 296, "lloc": 122, "sloc": 152, "comments": 19, "multi": 65, "blank": 55, "single_comments": 24}, "seq2seq/seq2seq/contrib/seq2seq/__init__.py": {"loc": 13, "lloc": 0, "sloc": 0, "comments": 13, "multi": 0, "blank": 0, "single_comments": 13}, "seq2seq/seq2seq/contrib/seq2seq/helper.py": {"loc": 514, "lloc": 246, "sloc": 317, "comments": 22, "multi": 86, "blank": 82, "single_comments": 29}, "seq2seq/seq2seq/training/utils.py": {"loc": 293, "lloc": 103, "sloc": 142, "comments": 18, "multi": 75, "blank": 56, "single_comments": 20}, "seq2seq/seq2seq/training/__init__.py": {"loc": 18, "lloc": 3, "sloc": 2, "comments": 13, "multi": 2, "blank": 1, "single_comments": 13}, "seq2seq/seq2seq/training/hooks.py": {"loc": 375, "lloc": 231, "sloc": 243, "comments": 31, "multi": 36, "blank": 69, "single_comments": 27}, "seq2seq/seq2seq/encoders/encoder.py": {"loc": 63, "lloc": 22, "sloc": 21, "comments": 13, "multi": 16, "blank": 13, "single_comments": 13}, "seq2seq/seq2seq/encoders/rnn_encoder.py": {"loc": 202, "lloc": 78, "sloc": 122, "comments": 15, "multi": 32, "blank": 34, "single_comments": 14}, "seq2seq/seq2seq/encoders/image_encoder.py": {"loc": 75, "lloc": 25, "sloc": 33, "comments": 18, "multi": 12, "blank": 13, "single_comments": 17}, "seq2seq/seq2seq/encoders/__init__.py": {"loc": 22, "lloc": 7, "sloc": 6, "comments": 13, "multi": 0, "blank": 2, "single_comments": 14}, "seq2seq/seq2seq/encoders/conv_encoder.py": {"loc": 121, "lloc": 38, "sloc": 67, "comments": 16, "multi": 23, "blank": 15, "single_comments": 16}, "seq2seq/seq2seq/encoders/pooling_encoder.py": {"loc": 154, "lloc": 45, "sloc": 66, "comments": 19, "multi": 45, "blank": 24, "single_comments": 19}, "seq2seq/seq2seq/metrics/bleu.py": {"loc": 93, "lloc": 50, "sloc": 51, "comments": 19, "multi": 11, "blank": 13, "single_comments": 18}, "seq2seq/seq2seq/metrics/metric_specs.py": {"loc": 232, "lloc": 113, "sloc": 125, "comments": 24, "multi": 34, "blank": 44, "single_comments": 29}, "seq2seq/seq2seq/metrics/rouge.py": {"loc": 365, "lloc": 134, "sloc": 135, "comments": 27, "multi": 128, "blank": 73, "single_comments": 29}, "seq2seq/seq2seq/metrics/__init__.py": {"loc": 19, "lloc": 4, "sloc": 3, "comments": 13, "multi": 2, "blank": 1, "single_comments": 13}, "seq2seq/seq2seq/data/parallel_data_provider.py": {"loc": 167, "lloc": 42, "sloc": 95, "comments": 17, "multi": 30, "blank": 25, "single_comments": 17}, "seq2seq/seq2seq/data/postproc.py": {"loc": 45, "lloc": 20, "sloc": 16, "comments": 14, "multi": 10, "blank": 5, "single_comments": 14}, "seq2seq/seq2seq/data/split_tokens_decoder.py": {"loc": 69, "lloc": 27, "sloc": 30, "comments": 16, "multi": 11, "blank": 12, "single_comments": 16}, "seq2seq/seq2seq/data/vocab.py": {"loc": 124, "lloc": 54, "sloc": 55, "comments": 18, "multi": 24, "blank": 26, "single_comments": 19}, "seq2seq/seq2seq/data/sequence_example_decoder.py": {"loc": 89, "lloc": 34, "sloc": 31, "comments": 15, "multi": 30, "blank": 11, "single_comments": 17}, "seq2seq/seq2seq/data/__init__.py": {"loc": 21, "lloc": 6, "sloc": 5, "comments": 13, "multi": 2, "blank": 1, "single_comments": 13}, "seq2seq/seq2seq/data/input_pipeline.py": {"loc": 359, "lloc": 129, "sloc": 218, "comments": 14, "multi": 66, "blank": 61, "single_comments": 14}, "seq2seq/seq2seq/models/image2seq.py": {"loc": 117, "lloc": 48, "sloc": 66, "comments": 21, "multi": 12, "blank": 20, "single_comments": 19}, "seq2seq/seq2seq/models/seq2seq_model.py": {"loc": 322, "lloc": 153, "sloc": 197, "comments": 35, "multi": 33, "blank": 56, "single_comments": 36}, "seq2seq/seq2seq/models/basic_seq2seq.py": {"loc": 125, "lloc": 61, "sloc": 79, "comments": 15, "multi": 13, "blank": 16, "single_comments": 17}, "seq2seq/seq2seq/models/__init__.py": {"loc": 22, "lloc": 6, "sloc": 5, "comments": 13, "multi": 2, "blank": 2, "single_comments": 13}, "seq2seq/seq2seq/models/model_base.py": {"loc": 152, "lloc": 63, "sloc": 87, "comments": 17, "multi": 21, "blank": 22, "single_comments": 22}, "seq2seq/seq2seq/models/bridges.py": {"loc": 166, "lloc": 70, "sloc": 71, "comments": 17, "multi": 43, "blank": 35, "single_comments": 17}, "seq2seq/seq2seq/models/attention_seq2seq.py": {"loc": 83, "lloc": 28, "sloc": 45, "comments": 18, "multi": 11, "blank": 12, "single_comments": 15}, "seq2seq/seq2seq/test/losses_test.py": {"loc": 65, "lloc": 38, "sloc": 33, "comments": 15, "multi": 6, "blank": 11, "single_comments": 15}, "seq2seq/seq2seq/test/data_test.py": {"loc": 161, "lloc": 86, "sloc": 104, "comments": 19, "multi": 7, "blank": 31, "single_comments": 19}, "seq2seq/seq2seq/test/rnn_encoder_test.py": {"loc": 203, "lloc": 101, "sloc": 144, "comments": 13, "multi": 12, "blank": 33, "single_comments": 14}, "seq2seq/seq2seq/test/example_config_test.py": {"loc": 102, "lloc": 54, "sloc": 50, "comments": 15, "multi": 3, "blank": 26, "single_comments": 23}, "seq2seq/seq2seq/test/conv_encoder_test.py": {"loc": 77, "lloc": 35, "sloc": 44, "comments": 13, "multi": 6, "blank": 13, "single_comments": 14}, "seq2seq/seq2seq/test/beam_search_test.py": {"loc": 205, "lloc": 116, "sloc": 141, "comments": 14, "multi": 7, "blank": 41, "single_comments": 16}, "seq2seq/seq2seq/test/pooling_encoder_test.py": {"loc": 77, "lloc": 36, "sloc": 44, "comments": 13, "multi": 6, "blank": 13, "single_comments": 14}, "seq2seq/seq2seq/test/utils.py": {"loc": 91, "lloc": 38, "sloc": 36, "comments": 14, "multi": 25, "blank": 16, "single_comments": 14}, "seq2seq/seq2seq/test/bridges_test.py": {"loc": 156, "lloc": 78, "sloc": 95, "comments": 14, "multi": 9, "blank": 35, "single_comments": 17}, "seq2seq/seq2seq/test/input_pipeline_test.py": {"loc": 161, "lloc": 70, "sloc": 108, "comments": 16, "multi": 9, "blank": 27, "single_comments": 17}, "seq2seq/seq2seq/test/models_test.py": {"loc": 232, "lloc": 121, "sloc": 165, "comments": 17, "multi": 13, "blank": 36, "single_comments": 18}, "seq2seq/seq2seq/test/vocab_test.py": {"loc": 122, "lloc": 65, "sloc": 76, "comments": 14, "multi": 6, "blank": 25, "single_comments": 15}, "seq2seq/seq2seq/test/metrics_test.py": {"loc": 209, "lloc": 81, "sloc": 141, "comments": 19, "multi": 6, "blank": 38, "single_comments": 24}, "seq2seq/seq2seq/test/__init__.py": {"loc": 17, "lloc": 2, "sloc": 1, "comments": 13, "multi": 2, "blank": 1, "single_comments": 13}, "seq2seq/seq2seq/test/pipeline_test.py": {"loc": 240, "lloc": 88, "sloc": 174, "comments": 29, "multi": 7, "blank": 29, "single_comments": 30}, "seq2seq/seq2seq/test/rnn_cell_test.py": {"loc": 144, "lloc": 90, "sloc": 97, "comments": 15, "multi": 5, "blank": 25, "single_comments": 17}, "seq2seq/seq2seq/test/decoder_test.py": {"loc": 243, "lloc": 115, "sloc": 165, "comments": 19, "multi": 15, "blank": 44, "single_comments": 19}, "seq2seq/seq2seq/test/hooks_test.py": {"loc": 154, "lloc": 93, "sloc": 97, "comments": 24, "multi": 4, "blank": 28, "single_comments": 25}, "seq2seq/seq2seq/test/train_utils_test.py": {"loc": 192, "lloc": 97, "sloc": 127, "comments": 20, "multi": 7, "blank": 35, "single_comments": 23}, "seq2seq/seq2seq/test/attention_test.py": {"loc": 108, "lloc": 59, "sloc": 61, "comments": 15, "multi": 6, "blank": 22, "single_comments": 19}, "seq2seq/seq2seq/tasks/inference_task.py": {"loc": 66, "lloc": 27, "sloc": 23, "comments": 13, "multi": 17, "blank": 13, "single_comments": 13}, "seq2seq/seq2seq/tasks/dump_beams.py": {"loc": 80, "lloc": 38, "sloc": 46, "comments": 13, "multi": 8, "blank": 13, "single_comments": 13}, "seq2seq/seq2seq/tasks/dump_attention.py": {"loc": 137, "lloc": 73, "sloc": 73, "comments": 17, "multi": 22, "blank": 25, "single_comments": 17}, "seq2seq/seq2seq/tasks/decode_text.py": {"loc": 188, "lloc": 88, "sloc": 96, "comments": 18, "multi": 41, "blank": 33, "single_comments": 18}, "seq2seq/seq2seq/tasks/__init__.py": {"loc": 21, "lloc": 5, "sloc": 4, "comments": 13, "multi": 3, "blank": 1, "single_comments": 13}}
-{"seq2seq/setup.py": {"loc": 20, "lloc": 4, "sloc": 18, "comments": 0, "multi": 0, "blank": 2, "single_comments": 0}, "seq2seq/seq2seq/__init__.py": {"loc": 2, "lloc": 2, "sloc": 2, "comments": 0, "multi": 0, "blank": 0, "single_comments": 0}, "seq2seq/seq2seq/models.py": {"loc": 291, "lloc": 138, "sloc": 154, "comments": 4, "multi": 83, "blank": 50, "single_comments": 4}, "seq2seq/seq2seq/cells.py": {"loc": 107, "lloc": 71, "sloc": 82, "comments": 0, "multi": 0, "blank": 25, "single_comments": 0}, "seq2seq/tests/test.py": {"loc": 61, "lloc": 45, "sloc": 45, "comments": 0, "multi": 0, "blank": 16, "single_comments": 0}}
+{
+  "seq2seq/setup.py": {
+    "loc": 32,
+    "lloc": 4,
+    "sloc": 13,
+    "comments": 13,
+    "multi": 3,
+    "blank": 3,
+    "single_comments": 13
+  },
+  "seq2seq/bin/infer.py": {
+    "loc": 129,
+    "lloc": 63,
+    "sloc": 80,
+    "comments": 20,
+    "multi": 4,
+    "blank": 25,
+    "single_comments": 20
+  },
+  "seq2seq/bin/train.py": {
+    "loc": 277,
+    "lloc": 114,
+    "sloc": 200,
+    "comments": 26,
+    "multi": 7,
+    "blank": 42,
+    "single_comments": 28
+  },
+  "seq2seq/bin/__init__.py": {
+    "loc": 0,
+    "lloc": 0,
+    "sloc": 0,
+    "comments": 0,
+    "multi": 0,
+    "blank": 0,
+    "single_comments": 0
+  },
+  "seq2seq/bin/tools/generate_toy_data.py": {
+    "loc": 147,
+    "lloc": 62,
+    "sloc": 71,
+    "comments": 17,
+    "multi": 32,
+    "blank": 26,
+    "single_comments": 18
+  },
+  "seq2seq/bin/tools/profile.py": {
+    "loc": 205,
+    "lloc": 130,
+    "sloc": 131,
+    "comments": 25,
+    "multi": 18,
+    "blank": 33,
+    "single_comments": 23
+  },
+  "seq2seq/bin/tools/generate_beam_viz.py": {
+    "loc": 132,
+    "lloc": 64,
+    "sloc": 90,
+    "comments": 17,
+    "multi": 2,
+    "blank": 22,
+    "single_comments": 18
+  },
+  "seq2seq/bin/tools/generate_vocab.py": {
+    "loc": 94,
+    "lloc": 35,
+    "sloc": 61,
+    "comments": 19,
+    "multi": 3,
+    "blank": 11,
+    "single_comments": 19
+  },
+  "seq2seq/bin/data/cnn_daily_mail_summarization/process_story.py": {
+    "loc": 58,
+    "lloc": 24,
+    "sloc": 20,
+    "comments": 19,
+    "multi": 6,
+    "blank": 12,
+    "single_comments": 20
+  },
+  "seq2seq/seq2seq/graph_module.py": {
+    "loc": 62,
+    "lloc": 21,
+    "sloc": 16,
+    "comments": 16,
+    "multi": 20,
+    "blank": 10,
+    "single_comments": 16
+  },
+  "seq2seq/seq2seq/global_vars.py": {
+    "loc": 18,
+    "lloc": 2,
+    "sloc": 1,
+    "comments": 13,
+    "multi": 3,
+    "blank": 1,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/losses.py": {
+    "loc": 46,
+    "lloc": 12,
+    "sloc": 12,
+    "comments": 14,
+    "multi": 12,
+    "blank": 8,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/__init__.py": {
+    "loc": 35,
+    "lloc": 17,
+    "sloc": 16,
+    "comments": 13,
+    "multi": 3,
+    "blank": 3,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/configurable.py": {
+    "loc": 157,
+    "lloc": 96,
+    "sloc": 83,
+    "comments": 20,
+    "multi": 30,
+    "blank": 24,
+    "single_comments": 20
+  },
+  "seq2seq/seq2seq/graph_utils.py": {
+    "loc": 72,
+    "lloc": 29,
+    "sloc": 23,
+    "comments": 13,
+    "multi": 18,
+    "blank": 16,
+    "single_comments": 15
+  },
+  "seq2seq/seq2seq/inference/__init__.py": {
+    "loc": 22,
+    "lloc": 6,
+    "sloc": 5,
+    "comments": 13,
+    "multi": 2,
+    "blank": 2,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/inference/inference.py": {
+    "loc": 54,
+    "lloc": 15,
+    "sloc": 16,
+    "comments": 16,
+    "multi": 12,
+    "blank": 10,
+    "single_comments": 16
+  },
+  "seq2seq/seq2seq/inference/beam_search.py": {
+    "loc": 279,
+    "lloc": 100,
+    "sloc": 121,
+    "comments": 33,
+    "multi": 73,
+    "blank": 52,
+    "single_comments": 33
+  },
+  "seq2seq/seq2seq/decoders/attention_decoder.py": {
+    "loc": 189,
+    "lloc": 57,
+    "sloc": 109,
+    "comments": 21,
+    "multi": 30,
+    "blank": 28,
+    "single_comments": 22
+  },
+  "seq2seq/seq2seq/decoders/__init__.py": {
+    "loc": 20,
+    "lloc": 5,
+    "sloc": 4,
+    "comments": 13,
+    "multi": 2,
+    "blank": 1,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/decoders/attention.py": {
+    "loc": 150,
+    "lloc": 56,
+    "sloc": 64,
+    "comments": 20,
+    "multi": 34,
+    "blank": 30,
+    "single_comments": 22
+  },
+  "seq2seq/seq2seq/decoders/basic_decoder.py": {
+    "loc": 65,
+    "lloc": 31,
+    "sloc": 36,
+    "comments": 13,
+    "multi": 5,
+    "blank": 10,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/decoders/rnn_decoder.py": {
+    "loc": 121,
+    "lloc": 59,
+    "sloc": 64,
+    "comments": 16,
+    "multi": 21,
+    "blank": 21,
+    "single_comments": 15
+  },
+  "seq2seq/seq2seq/decoders/beam_search_decoder.py": {
+    "loc": 183,
+    "lloc": 62,
+    "sloc": 95,
+    "comments": 24,
+    "multi": 33,
+    "blank": 33,
+    "single_comments": 22
+  },
+  "seq2seq/seq2seq/contrib/rnn_cell.py": {
+    "loc": 124,
+    "lloc": 55,
+    "sloc": 66,
+    "comments": 23,
+    "multi": 20,
+    "blank": 16,
+    "single_comments": 22
+  },
+  "seq2seq/seq2seq/contrib/__init__.py": {
+    "loc": 13,
+    "lloc": 0,
+    "sloc": 0,
+    "comments": 13,
+    "multi": 0,
+    "blank": 0,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/contrib/experiment.py": {
+    "loc": 114,
+    "lloc": 32,
+    "sloc": 42,
+    "comments": 17,
+    "multi": 33,
+    "blank": 21,
+    "single_comments": 18
+  },
+  "seq2seq/seq2seq/contrib/seq2seq/decoder.py": {
+    "loc": 296,
+    "lloc": 122,
+    "sloc": 152,
+    "comments": 19,
+    "multi": 65,
+    "blank": 55,
+    "single_comments": 24
+  },
+  "seq2seq/seq2seq/contrib/seq2seq/__init__.py": {
+    "loc": 13,
+    "lloc": 0,
+    "sloc": 0,
+    "comments": 13,
+    "multi": 0,
+    "blank": 0,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/contrib/seq2seq/helper.py": {
+    "loc": 514,
+    "lloc": 246,
+    "sloc": 317,
+    "comments": 22,
+    "multi": 86,
+    "blank": 82,
+    "single_comments": 29
+  },
+  "seq2seq/seq2seq/training/utils.py": {
+    "loc": 293,
+    "lloc": 103,
+    "sloc": 142,
+    "comments": 18,
+    "multi": 75,
+    "blank": 56,
+    "single_comments": 20
+  },
+  "seq2seq/seq2seq/training/__init__.py": {
+    "loc": 18,
+    "lloc": 3,
+    "sloc": 2,
+    "comments": 13,
+    "multi": 2,
+    "blank": 1,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/training/hooks.py": {
+    "loc": 375,
+    "lloc": 231,
+    "sloc": 243,
+    "comments": 31,
+    "multi": 36,
+    "blank": 69,
+    "single_comments": 27
+  },
+  "seq2seq/seq2seq/encoders/encoder.py": {
+    "loc": 63,
+    "lloc": 22,
+    "sloc": 21,
+    "comments": 13,
+    "multi": 16,
+    "blank": 13,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/encoders/rnn_encoder.py": {
+    "loc": 202,
+    "lloc": 78,
+    "sloc": 122,
+    "comments": 15,
+    "multi": 32,
+    "blank": 34,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/encoders/image_encoder.py": {
+    "loc": 75,
+    "lloc": 25,
+    "sloc": 33,
+    "comments": 18,
+    "multi": 12,
+    "blank": 13,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/encoders/__init__.py": {
+    "loc": 22,
+    "lloc": 7,
+    "sloc": 6,
+    "comments": 13,
+    "multi": 0,
+    "blank": 2,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/encoders/conv_encoder.py": {
+    "loc": 121,
+    "lloc": 38,
+    "sloc": 67,
+    "comments": 16,
+    "multi": 23,
+    "blank": 15,
+    "single_comments": 16
+  },
+  "seq2seq/seq2seq/encoders/pooling_encoder.py": {
+    "loc": 154,
+    "lloc": 45,
+    "sloc": 66,
+    "comments": 19,
+    "multi": 45,
+    "blank": 24,
+    "single_comments": 19
+  },
+  "seq2seq/seq2seq/metrics/bleu.py": {
+    "loc": 93,
+    "lloc": 50,
+    "sloc": 51,
+    "comments": 19,
+    "multi": 11,
+    "blank": 13,
+    "single_comments": 18
+  },
+  "seq2seq/seq2seq/metrics/metric_specs.py": {
+    "loc": 232,
+    "lloc": 113,
+    "sloc": 125,
+    "comments": 24,
+    "multi": 34,
+    "blank": 44,
+    "single_comments": 29
+  },
+  "seq2seq/seq2seq/metrics/rouge.py": {
+    "loc": 365,
+    "lloc": 134,
+    "sloc": 135,
+    "comments": 27,
+    "multi": 128,
+    "blank": 73,
+    "single_comments": 29
+  },
+  "seq2seq/seq2seq/metrics/__init__.py": {
+    "loc": 19,
+    "lloc": 4,
+    "sloc": 3,
+    "comments": 13,
+    "multi": 2,
+    "blank": 1,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/data/parallel_data_provider.py": {
+    "loc": 167,
+    "lloc": 42,
+    "sloc": 95,
+    "comments": 17,
+    "multi": 30,
+    "blank": 25,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/data/postproc.py": {
+    "loc": 45,
+    "lloc": 20,
+    "sloc": 16,
+    "comments": 14,
+    "multi": 10,
+    "blank": 5,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/data/split_tokens_decoder.py": {
+    "loc": 69,
+    "lloc": 27,
+    "sloc": 30,
+    "comments": 16,
+    "multi": 11,
+    "blank": 12,
+    "single_comments": 16
+  },
+  "seq2seq/seq2seq/data/vocab.py": {
+    "loc": 124,
+    "lloc": 54,
+    "sloc": 55,
+    "comments": 18,
+    "multi": 24,
+    "blank": 26,
+    "single_comments": 19
+  },
+  "seq2seq/seq2seq/data/sequence_example_decoder.py": {
+    "loc": 89,
+    "lloc": 34,
+    "sloc": 31,
+    "comments": 15,
+    "multi": 30,
+    "blank": 11,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/data/__init__.py": {
+    "loc": 21,
+    "lloc": 6,
+    "sloc": 5,
+    "comments": 13,
+    "multi": 2,
+    "blank": 1,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/data/input_pipeline.py": {
+    "loc": 359,
+    "lloc": 129,
+    "sloc": 218,
+    "comments": 14,
+    "multi": 66,
+    "blank": 61,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/models/image2seq.py": {
+    "loc": 117,
+    "lloc": 48,
+    "sloc": 66,
+    "comments": 21,
+    "multi": 12,
+    "blank": 20,
+    "single_comments": 19
+  },
+  "seq2seq/seq2seq/models/seq2seq_model.py": {
+    "loc": 322,
+    "lloc": 153,
+    "sloc": 197,
+    "comments": 35,
+    "multi": 33,
+    "blank": 56,
+    "single_comments": 36
+  },
+  "seq2seq/seq2seq/models/basic_seq2seq.py": {
+    "loc": 125,
+    "lloc": 61,
+    "sloc": 79,
+    "comments": 15,
+    "multi": 13,
+    "blank": 16,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/models/__init__.py": {
+    "loc": 22,
+    "lloc": 6,
+    "sloc": 5,
+    "comments": 13,
+    "multi": 2,
+    "blank": 2,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/models/model_base.py": {
+    "loc": 152,
+    "lloc": 63,
+    "sloc": 87,
+    "comments": 17,
+    "multi": 21,
+    "blank": 22,
+    "single_comments": 22
+  },
+  "seq2seq/seq2seq/models/bridges.py": {
+    "loc": 166,
+    "lloc": 70,
+    "sloc": 71,
+    "comments": 17,
+    "multi": 43,
+    "blank": 35,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/models/attention_seq2seq.py": {
+    "loc": 83,
+    "lloc": 28,
+    "sloc": 45,
+    "comments": 18,
+    "multi": 11,
+    "blank": 12,
+    "single_comments": 15
+  },
+  "seq2seq/seq2seq/test/losses_test.py": {
+    "loc": 65,
+    "lloc": 38,
+    "sloc": 33,
+    "comments": 15,
+    "multi": 6,
+    "blank": 11,
+    "single_comments": 15
+  },
+  "seq2seq/seq2seq/test/data_test.py": {
+    "loc": 161,
+    "lloc": 86,
+    "sloc": 104,
+    "comments": 19,
+    "multi": 7,
+    "blank": 31,
+    "single_comments": 19
+  },
+  "seq2seq/seq2seq/test/rnn_encoder_test.py": {
+    "loc": 203,
+    "lloc": 101,
+    "sloc": 144,
+    "comments": 13,
+    "multi": 12,
+    "blank": 33,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/test/example_config_test.py": {
+    "loc": 102,
+    "lloc": 54,
+    "sloc": 50,
+    "comments": 15,
+    "multi": 3,
+    "blank": 26,
+    "single_comments": 23
+  },
+  "seq2seq/seq2seq/test/conv_encoder_test.py": {
+    "loc": 77,
+    "lloc": 35,
+    "sloc": 44,
+    "comments": 13,
+    "multi": 6,
+    "blank": 13,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/test/beam_search_test.py": {
+    "loc": 205,
+    "lloc": 116,
+    "sloc": 141,
+    "comments": 14,
+    "multi": 7,
+    "blank": 41,
+    "single_comments": 16
+  },
+  "seq2seq/seq2seq/test/pooling_encoder_test.py": {
+    "loc": 77,
+    "lloc": 36,
+    "sloc": 44,
+    "comments": 13,
+    "multi": 6,
+    "blank": 13,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/test/utils.py": {
+    "loc": 91,
+    "lloc": 38,
+    "sloc": 36,
+    "comments": 14,
+    "multi": 25,
+    "blank": 16,
+    "single_comments": 14
+  },
+  "seq2seq/seq2seq/test/bridges_test.py": {
+    "loc": 156,
+    "lloc": 78,
+    "sloc": 95,
+    "comments": 14,
+    "multi": 9,
+    "blank": 35,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/test/input_pipeline_test.py": {
+    "loc": 161,
+    "lloc": 70,
+    "sloc": 108,
+    "comments": 16,
+    "multi": 9,
+    "blank": 27,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/test/models_test.py": {
+    "loc": 232,
+    "lloc": 121,
+    "sloc": 165,
+    "comments": 17,
+    "multi": 13,
+    "blank": 36,
+    "single_comments": 18
+  },
+  "seq2seq/seq2seq/test/vocab_test.py": {
+    "loc": 122,
+    "lloc": 65,
+    "sloc": 76,
+    "comments": 14,
+    "multi": 6,
+    "blank": 25,
+    "single_comments": 15
+  },
+  "seq2seq/seq2seq/test/metrics_test.py": {
+    "loc": 209,
+    "lloc": 81,
+    "sloc": 141,
+    "comments": 19,
+    "multi": 6,
+    "blank": 38,
+    "single_comments": 24
+  },
+  "seq2seq/seq2seq/test/__init__.py": {
+    "loc": 17,
+    "lloc": 2,
+    "sloc": 1,
+    "comments": 13,
+    "multi": 2,
+    "blank": 1,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/test/pipeline_test.py": {
+    "loc": 240,
+    "lloc": 88,
+    "sloc": 174,
+    "comments": 29,
+    "multi": 7,
+    "blank": 29,
+    "single_comments": 30
+  },
+  "seq2seq/seq2seq/test/rnn_cell_test.py": {
+    "loc": 144,
+    "lloc": 90,
+    "sloc": 97,
+    "comments": 15,
+    "multi": 5,
+    "blank": 25,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/test/decoder_test.py": {
+    "loc": 243,
+    "lloc": 115,
+    "sloc": 165,
+    "comments": 19,
+    "multi": 15,
+    "blank": 44,
+    "single_comments": 19
+  },
+  "seq2seq/seq2seq/test/hooks_test.py": {
+    "loc": 154,
+    "lloc": 93,
+    "sloc": 97,
+    "comments": 24,
+    "multi": 4,
+    "blank": 28,
+    "single_comments": 25
+  },
+  "seq2seq/seq2seq/test/train_utils_test.py": {
+    "loc": 192,
+    "lloc": 97,
+    "sloc": 127,
+    "comments": 20,
+    "multi": 7,
+    "blank": 35,
+    "single_comments": 23
+  },
+  "seq2seq/seq2seq/test/attention_test.py": {
+    "loc": 108,
+    "lloc": 59,
+    "sloc": 61,
+    "comments": 15,
+    "multi": 6,
+    "blank": 22,
+    "single_comments": 19
+  },
+  "seq2seq/seq2seq/tasks/inference_task.py": {
+    "loc": 66,
+    "lloc": 27,
+    "sloc": 23,
+    "comments": 13,
+    "multi": 17,
+    "blank": 13,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/tasks/dump_beams.py": {
+    "loc": 80,
+    "lloc": 38,
+    "sloc": 46,
+    "comments": 13,
+    "multi": 8,
+    "blank": 13,
+    "single_comments": 13
+  },
+  "seq2seq/seq2seq/tasks/dump_attention.py": {
+    "loc": 137,
+    "lloc": 73,
+    "sloc": 73,
+    "comments": 17,
+    "multi": 22,
+    "blank": 25,
+    "single_comments": 17
+  },
+  "seq2seq/seq2seq/tasks/decode_text.py": {
+    "loc": 188,
+    "lloc": 88,
+    "sloc": 96,
+    "comments": 18,
+    "multi": 41,
+    "blank": 33,
+    "single_comments": 18
+  },
+  "seq2seq/seq2seq/tasks/__init__.py": {
+    "loc": 21,
+    "lloc": 5,
+    "sloc": 4,
+    "comments": 13,
+    "multi": 3,
+    "blank": 1,
+    "single_comments": 13
+  }
+}
