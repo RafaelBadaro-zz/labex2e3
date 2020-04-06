@@ -57,7 +57,8 @@ def calculate_medians():
         'stars': [_df['stars'].median()],
         'watchers': [_df['watchers'].median()],
         'forks': [_df['forks'].median()],
-        'releases': [_df['releases'].median()]
+        'releases': [_df['releases'].median()],
+        'locs': [_df['loc'].median()]
     }
 
     medians_df = pd.DataFrame(medians)
