@@ -3,6 +3,7 @@ import datetime
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
+from dateutil.relativedelta import relativedelta
 
 _df = None
 
@@ -18,8 +19,7 @@ def process_metrics():
 
     _df = pd.read_csv(METADATA_FPATH, sep=',')
     _df_len = _df.shape[0]
-    _df['loc'] = [0] * _df_len
-    _df['release_frequency'] = [0] * _df_len
+    _df['loc'] = _df['release_frequency'] = _df['age'] = [0] * _df_len
 
     today = datetime.datetime.today()
 
@@ -33,6 +33,8 @@ def process_metrics():
         _df.at[i, 'loc'] = corresponding_loc
         _df.at[i, 'release_frequency'] = _df.loc[i, 'releases'] - (today - datetime.datetime.strptime(
             _df.loc[i, 'created_at'].split('T')[0], '%Y-%m-%d')).days
+        _df.at[i, 'age'] = relativedelta(today, datetime.datetime.strptime(
+            _df.loc[i, 'created_at'].split('T')[0], '%Y-%m-%d')).years
 
 
 def generate_consolidated_loc(metric_fpath):
@@ -58,7 +60,9 @@ def calculate_medians():
         'watchers': [_df['watchers'].median()],
         'forks': [_df['forks'].median()],
         'releases': [_df['releases'].median()],
-        'locs': [_df['loc'].median()]
+        'release_frequency': [_df['release_frequency'].median()],
+        'locs': [_df['loc'].median()],
+        'age': [_df['age'].median()]
     }
 
     medians_df = pd.DataFrame(medians)
