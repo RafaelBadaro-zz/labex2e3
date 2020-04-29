@@ -1,0 +1,10 @@
+1) Repositórios mais velhos têm as perguntas mais velhas (ou mais novas) do stackoverflow
+ 
+2) Correlação entre comentários de linha de código issues, abertas no repositórios e posts abertos no stack overflow.
+as pessoas têm menos dúvidas ao lerem os comentários portanto existiram menos posts
+
+3)Repositórios mais populares tem perguntas mais frequentes
+
+4)As linguagens com maiores numeros de issues tambem sao as com mais discussões no stackoverflow
+
+Dataset = 100 repositórios mais populares do github
