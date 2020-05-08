@@ -1,10 +1,12 @@
-1) Repositórios mais velhos têm as perguntas mais velhas (ou mais novas) do stackoverflow
- 
-2) Correlação entre comentários de linha de código issues, abertas no repositórios e posts abertos no stack overflow.
-as pessoas têm menos dúvidas ao lerem os comentários portanto existiram menos posts
+Dataset: 10 repositórios de frameworks web (TIS)
 
-3)Repositórios mais populares tem perguntas mais frequentes
+Perguntas a ser respondidas:
 
-4)As linguagens com maiores numeros de issues tambem sao as com mais discussões no stackoverflow
+Com que frequência issues do GitHub são discutidas no StackOverflow?
+Qual o impacto das discussões de issues do GitHub no StackOverflow?
+Existe alguma relação entre a popularidade dos repositórios e o buzz gerado?
+Repositórios com as issues mais antigas têm as perguntas mais antigas do stackoverflow?
+Issues mais comentadas no GitHub correspondem aos posts com maior número de upvotes no StackOverflow?
+Issues comentadas no stackoverflow tem tempo de vida menor no Github
 
-Dataset = 10 repositórios mais populares do github
+
