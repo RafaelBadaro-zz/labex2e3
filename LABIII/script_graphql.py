@@ -2,7 +2,7 @@ import requests
 import time
 import csv
 
-headers = {"Authorization": "token 5bf64e446241f265a77691dd7ebcb8e059c65776"}
+headers = {"Authorization": "token ###"}
 
 
 class Repository:
